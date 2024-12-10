@@ -63,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./sites/jwtest1/
+          path: ./sites/jwtest1/jw
 
   # Deployment job
   deploy:
