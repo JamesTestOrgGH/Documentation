@@ -6,7 +6,6 @@ Unfortunately, there will be times where issues are out of the AVM core team and
 
 This page will detail any of the known issues that consumers may come across when using AVM modules and provide links to learn more about them and where to get involved in discussions on these known issues with the rest of the community.
 
-{{< hint type=important >}}
 
 Issues related to an AVM module must be raised on the repo they are hosted on, not the AVM Central (`Azure/Azure-Verified-Modules`) repo!
 
