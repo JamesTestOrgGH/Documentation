@@ -6,13 +6,12 @@ Microsoft uses the approach detailed in this section to identify the deployments
 
 Telemetry collected as described here does not provide Microsoft with insights into the resources deployed, their configuration or any customer data stored in or processed by Azure resources deployed by using code from AVM. Microsoft does not track the usage/consumption of individual resources using telemetry described here.
 
-{{< hint type=note >}}
+
 
 While telemetry gathered as described here is only accessible by Microsoft. Bicep customers have access to the exact same deployment information on the Azure portal, under the Deployments section of the corresponding scope (Resource Group, Subscription, etc.). Terraform customers can view the information sent in the `main.telemetry.tf` file.
 
 See [View deployment history with Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal) for further information on how.
 
-{{< /hint >}}
 
 <br>
 
@@ -39,8 +38,7 @@ To opt out you can set the parameters/variables listed below to `false` in the A
 
 Though similar in principles, this approach is not to be confused and does not conflict with the usage of CUA IDs that are used to track [Azure customer usage attribution](https://learn.microsoft.com/partner-center/marketplace/azure-partner-customer-usage-attribution) of Azure marketplace solutions (partner solutions). The GUID-based telemetry approach described here can coexist and can be used side-by-side with CUA IDs. If you have any partner or customer scenarios that require the addition of CUA IDs, you can customize the AVM modules by adding the required CUA ID deployment while keeping the built-in telemetry solution.
 
-{{< hint type=tip >}}
+
 
 If you're a partner and want to build a solution that tracks customer usage attribution (using a CUA ID), we recommend implementing it on the consuming template's level (i.e., the multi-module solution, such as workload/application) and apply the required naming format `'pid-'` (without the suffix).
 
-{{< /hint >}}
